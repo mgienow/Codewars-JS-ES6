@@ -31,7 +31,7 @@ which I am trying to learn. I still need to think it
 through in ES5 terms first, but baby steps...*/
 
 function bmi(weight, height) {
-  var bmi = weight/Math.pow(height, 2);
+  const bmi = weight/Math.pow(height, 2);
 
   return bmi<=18.5 ? 'Underweight' : bmi<=25 ? 'Normal' : bmi<=30.0 ? 'Overweight' : 'Obese';
 }
