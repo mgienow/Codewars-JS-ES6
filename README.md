@@ -1,1 +1,1 @@
-# Codewars-JS-ES6
+# Learning ES6 syntax and upping my functional programming game by doing code challenges
