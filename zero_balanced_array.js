@@ -24,3 +24,18 @@ function ìsZeroBalanced(n){
     return false;
   };
 }
+
+//REFACTORED TO BE A LITTLE CLEANER:
+
+function ìsZeroBalanced(n){
+
+  return (n.length === 0) ? false : true;
+
+  let x = n.reduce((a,b) => a+b, 0);
+
+return (x===0 && n.every(y=>n.includes(-y))) ? true: false;
+};
+
+/* Still not happy with the first line. Trying to research alternatives to IF statements
+ that are not ternary, which is currently the only thing I know. My conclusion is, it's
+ time to learn ES6 for reals.*/
